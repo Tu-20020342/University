@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+
+        <div class="head">
+            <div class="logo">
+                <a href="#"><img src="../eduford_img/logo.png" alt="" ></a>
+            </div>
+            
+            <div class="nav">
+                <i class="fa-solid fa-xmark"></i>
+                <ul>
+                    <li><div onclick="home()">HOME</div></li>
+                    <li><div onclick="about()">ABOUT</div></li>   
+                    <li><div onclick="course()">COUSRSE</div></li>
+                    <li><div onclick="blog()">BLOG</div></li>
+                    <li><div onclick="contact()" >CONTACT</div></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="content">
+            <h1>Contact Us</h1>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.538488771915!2d105.7708575139649!3d20.97104099512426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134532852452661%3A0x815247711a54ec24!2zVHLGsOG7nW5nIENhbyDEkOG6s25nIFkgVOG6vyBIw6AgxJDDtG5n!5e0!3m2!1svi!2s!4v1680706339320!5m2!1svi!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="contact">
+
+        <div class="box">
+            <div class="box-contact">
+                <div class="address row">
+                    <i class="fa-solid fa-house"></i>
+                    <div>
+                        <h4>23 Tu Hoang</h4>
+                    <p>Xuan Phuong, Nam Tu Liem, Ha Noi</p>
+                    </div>
+                </div>
+                <div class="phone row">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>+84 0857741360</h4>
+                        <p>Tran Van Tu</p>
+                    </div>
+                </div>
+                <div class="email row">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>trantu@gmail.com</h4>
+                        <p>Email us your query</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-contact">
+                <input class="box-item" type="text" placeholder="Enter name">
+                <input class="box-item" type="text" placeholder="Test">
+                <input class="box-item" type="email" placeholder="Enter Email">
+                <textarea class="box-item" name="Your comment" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                <button>Send message</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about">
+        <div class="head-about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectotur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est <br> sollicitudin ut. Maecenas ut venenatis ex, et dapitbus purus</p>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <a href="">Made with by Tran Tu <span>&#9825;</span></a>
+        </div>
+    </div>
+</body>
+<script>
+    var menu = document.querySelector('.nav');
+    var menuIcon = document.querySelector('.fa-bars');
+    var closeMenu = document.querySelector('.fa-xmark');
+
+    menuIcon.addEventListener('click', function() {
+        menu.classList.add('hidden');
+    });
+
+    closeMenu.addEventListener('click', function() {
+        menu.classList.remove('hidden');
+    });
+
+
+    function home() {
+        location.replace("../index.html");
+    }
+
+    function about() {
+        location.replace("../about/index.html");
+    }
+
+    function course() {
+        location.replace("../cousers/index.html");
+    }
+
+    function blog() {
+        location.replace("../blog/index.html");
+    }
+
+    function contact() {
+        location.replace("../contact/index.html");
+    }
+</script>
+</html>

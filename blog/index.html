@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+
+        <div class="head">
+            <div class="logo">
+                <a href="#"><img src="../eduford_img/logo.png" alt="" ></a>
+            </div>
+            
+            <div class="nav">
+                <i class="fa-solid fa-xmark"></i>
+                <ul>
+                    <li><div onclick="home()">HOME</div></li>
+                    <li><div onclick="about()">ABOUT</div></li>   
+                    <li><div onclick="course()">COUSRSE</div></li>
+                    <li><div onclick="blog()">BLOG</div></li>
+                    <li><div onclick="contact()" >CONTACT</div></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="content">
+            <h1>Our Certificate & Online Program 2023</h1>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="item left">
+            <img src="../eduford_img/certificate.jpg" alt="">
+            <h1>We are the wold's largest university</h1>
+            <p>Lorem ipsum dolor sit amet, consectotur adipiscing elit. Pellentesque aliquet turpis nulla,
+                eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapitbus purus Donec sit.
+            </p>
+            <p>
+                Baby Thangwang and Bhalluka the Bear are best friends.
+                They like to talk and growl together,
+                This cute short story has lots of sound words for early
+                readers to practice sounding out or to have fun sounding out
+                when reading to a toddler / kindergartener. Sample Page – Thangwang
+                and Bhalluka Baby Thangwang likes to …
+            </p>
+            <p>Doing your chores is sometimes hard, see how this child 
+                makes it fun and rewarding. A free book by MonkeyPen 
+                – where you can order personalised books of your child!
+                See more books by MonkeyPen here on FKB. See more books
+                on Behaviour here on FKB.
+            </p>
+            <p>Published by NASA this space activities book 
+                provides fun recognition, word, and math activities 
+                and information about space flight aimed at children 
+                aged 5 to 12.
+            </p>
+        </div>
+
+        <div class="item right">
+            <h3>Post categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>12</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>30</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>25</span>
+            </div>
+            <div>
+                <span>Comerce</span>
+                <span>16</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact container">
+        <div class="box-contact">
+            <h2 class="box-item">Leave a comment</h2>
+            <input class="box-item" type="text" placeholder="Enter name">
+            <input class="box-item" type="email" placeholder="Enter Email">
+            <textarea class="box-item" name="Your comment" id="" cols="30" rows="10" placeholder="Your Commenr"></textarea>
+            <button>POST COMMENT</button>
+        </div>
+    </div>
+
+    <div class="container about">
+        <div class="head-about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectotur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est <br> sollicitudin ut. Maecenas ut venenatis ex, et dapitbus purus</p>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <a href="">Made with by Tran Tu <span>&#9825;</span></a>
+        </div>
+    </div>
+</body>
+<script>
+    var menu = document.querySelector('.nav');
+    var menuIcon = document.querySelector('.fa-bars');
+    var closeMenu = document.querySelector('.fa-xmark');
+
+    menuIcon.addEventListener('click', function() {
+        menu.classList.add('hidden');
+    });
+
+    closeMenu.addEventListener('click', function() {
+        menu.classList.remove('hidden');
+    });
+
+
+    function home() {
+        location.replace("../index.html");
+    }
+
+    function about() {
+        location.replace("../about/index.html");
+    }
+
+    function course() {
+        location.replace("../cousers/index.html");
+    }
+
+    function blog() {
+        location.replace("../blog/index.html");
+    }
+
+    function contact() {
+        location.replace("../contact/index.html");
+    }
+</script>
+</html>

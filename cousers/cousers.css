@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.main{
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 40px 50px;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../eduford_img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header .head{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav div{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.nav div::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.nav div:hover::after {
+    transform: scaleX(1);
+}
+
+.head img{
+    max-width: 180px;
+    height: auto;
+    margin-top: 6px;
+}
+
+.head i{
+    display: none;
+}
+
+
+.header .content {
+    position: absolute;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h1{
+    font-size: 52px;
+    padding: 30px 0;
+    margin-top: 80px;
+}
+
+.content button{
+    padding: 12px 34px ;
+    font-size: 18px;
+    margin-top: 50px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.content button:hover{
+    background-color: rgb(242, 16, 12);
+    color: #ffffff;
+    border: 1px solid rgb(242, 16, 12) ;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;    
+}
+
+
+.head-ctn h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.container p{
+    font-size: 18px;
+    color: rgb(125, 113, 98);
+}
+
+.body-ctn{
+    display: flex;
+    margin-top: 50px;
+}
+
+.body-ctn .body-item{
+    max-width: 400px;
+    min-height: 220px;
+    text-align: center;
+    border:  1px solid #f0ededbd;
+    background-color: #f0ededbd;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 8px;
+}
+
+.body-ctn .body-item:hover{
+    box-shadow: 0 0 10px #f0ededbd, 0 0 20px #f0ededbd, 0 0 30px #f0ededbd;
+}
+
+.body-item h3{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.body-facilities .item-facilities{
+    max-width: 400px;
+    min-height: 200px;
+    margin: 0 20px;
+}
+
+.item-facilities img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-facilities h4{
+    margin: 20px 0;
+}
+
+.head-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 70px 0;
+}
+
+.head-about i{
+    padding:0 10px;
+}
+
+.head-about i:hover{
+    color: tomato;
+    cursor: pointer;
+}
+
+.head-about p, .head-about a{
+    padding: 25px;
+    text-decoration: none;
+    color: rgb(125, 113, 98);
+} 
+
+@media(max-width: 740px){
+
+    .head-ctn{
+        font-size: 40px;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .head i{
+        display: block;
+    }
+    .body-ctn{
+        display: block;
+    }
+    .body-ctn .col{
+        margin:20px;
+    }
+
+    .header{
+       padding: 20px; 
+    }
+    .head img{
+        width: 120px;
+    }
+    .nav div{
+        display: block;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .nav{
+        display: none;
+        position: absolute;
+        background-color: tomato;
+        top: 0;
+        right: -220px;
+        height: 100vh;
+        z-index: 2;
+        padding: 20px 20px;
+        border-radius: 10px 0 0 10px;
+        transition: 1s;
+    }
+
+    .hidden{
+        display: block;
+        right: 0;
+    }
+
+    .nav i{
+        font-size: 20px;
+        cursor: pointer;
+        padding:0 5px;
+    }
+
+    .content h1{
+        font-size: 40px;
+    }
+    .content button{
+        font-size: 14px;
+    }
+
+    .contact h2{
+        font-size: 32px;
+    }
+    
+}
